@@ -1,0 +1,72 @@
+:root {
+    --lightColor: #fae3d2;
+    --darkColor: #303a75;
+    --accentColorOne: #888686;
+}
+
+body {
+    color: var(--darkColor);
+    background-color: var(--lightColor);
+    font-size: 18px;
+    font-family: "noticia text", serif;
+}
+
+header {
+    text-align: center;
+    margin: 1em 0 0 0;
+    border-bottom: 1px solid var(--darkColor);
+}
+
+footer {
+    text-align: center;
+    margin: 1em 0 0 0;
+    border-top: 1px solid var(--darkColor);
+}
+
+h1 {
+    font-weight: bold;
+}
+
+a {
+    color: var(--darkColor);
+}
+
+a:hover {
+    color: var(--darkColor);
+    text-decoration: none;
+}
+
+.bg-light {
+    background-color: var(--lightColor) !important;
+}
+
+.content-wrapper {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/*nav bar link*/
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--accentColorOne);
+}
+
+
+/*active navbar link*/
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--darkColor);
+}
+
+
+/*navbar hover*/
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--darkColor);
+}
