@@ -9,20 +9,17 @@
 </head>
 
 <body>
-    <!--HEADER-->
-    <header>
-        <a href="../">
-            <h1>Jasmine Joule Webb</h1>
-        </a>
-    </header>
-    <!--End of Header-->
     <!-- NAV BAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="../">
+            <h1>Jasmine Joule Webb</h1>
+            <h2 class="header">Computer Scientist</h2>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-center flex-wrap" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="../">
@@ -54,8 +51,8 @@
                       Resume
                     </a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="./contact.html">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./contact.html">
                       Contact
                     </a>
                 </li>
@@ -65,45 +62,44 @@
     <!--End Nav Bar -->
 
     <!--START PAGE CONTENT-->
+    <!--CONTACT FORM-->
     <div class="content-wrapper">
-        <!--CONTACT FORM-->
-        <div class="content-wrapper">
-            <div class="col-md-8 order-md-1">
-                <form class="needs-validation" novalidate="">
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">First name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                            <div class="invalid-feedback">
-                                Valid first name is required.
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="lastName">Last name</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                            <div class="invalid-feedback">
-                                Valid last name is required.
-                            </div>
-                        </div>
-                    </div>
-
-                    <label class="form-control-label mbr-fonts-style display-7" for="message-form1-2w">Message</label>
-                    <textarea type="text" class="form-control" name="message" rows="7" data-form-field="Message" id="message-form1-2w"></textarea>
-
-                    <div class="mb-3">
-                        <label for="email">Email </label>
-                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+        <br>
+        <div class="col-md-8 order-md-1 form">
+            <form class="needs-validation" novalidate="">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName">First name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
                         <div class="invalid-feedback">
-                            <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+                            Valid first name is required.
                         </div>
                     </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName">Last name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+                </div>
 
-                    <button href="" type="submit" class="btn btn-primary btn-form display-4">Submit</button>
+                <label class="form-control-label mbr-fonts-style display-7" for="message-form1-2w">Message</label>
+                <textarea type="text" class="form-control" name="message" rows="7" data-form-field="Message" id="message-form1-2w"></textarea>
 
-                </form>
-            </div>
+                <div class="mb-3">
+                    <label for="email">Email </label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+                    </div>
+                </div>
+
+                <button href="" type="submit" class="btn btn-primary btn-form display-4">Submit</button>
+
+            </form>
         </div>
-        <!--End Contact Form-->
+        <br>
     </div>
     <!--End Page Content-->
 

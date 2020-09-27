@@ -2,6 +2,7 @@
     --lightColor: #fae3d2;
     --darkColor: #303a75;
     --accentColor: #888686;
+    --background: #fffbf8;
 }
 
 body {
@@ -13,7 +14,17 @@ body {
 
 h1 {
     font-weight: bold;
-    padding-top: .5em;
+}
+
+footer {
+    background-color: var(--background);
+    border-top: 1px solid var(--darkColor);
+    margin-bottom: 0;
+}
+
+.mb-2,
+.my-2 {
+    margin-bottom: 0 !important;
 }
 
 .header {
@@ -36,26 +47,28 @@ a:hover {
 }
 
 .bg-light {
-    background-color: var(--lightColor) !important;
+    background-color: var(--background) !important;
 }
 
 .content-wrapper {
-    max-width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 1em;
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3em;
     margin-bottom: 1em;
+    background-color: var(--background);
+    border: 1px solid var(--darkColor);
 }
 
 .navbar {
     border-bottom: 1px solid var(--darkColor);
-    text-align: right;
+    align-items: flex-end;
 }
 
 
 /*nav bar link*/
 
-.navbar-light .navbar-nav .nav-link {
+.nav-link {
     color: var(--accentColor);
 }
 
