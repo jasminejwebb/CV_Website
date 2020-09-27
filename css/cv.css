@@ -1,30 +1,25 @@
 :root {
     --lightColor: #fae3d2;
     --darkColor: #303a75;
-    --accentColorOne: #888686;
+    --accentColor: #888686;
 }
 
 body {
     color: var(--darkColor);
     background-color: var(--lightColor);
-    font-size: 18px;
+    font-size: 1em;
     font-family: "noticia text", serif;
-}
-
-header {
-    text-align: center;
-    margin: 1em 0 0 0;
-    border-bottom: 1px solid var(--darkColor);
-}
-
-footer {
-    text-align: center;
-    margin: 1em 0 0 0;
-    border-top: 1px solid var(--darkColor);
 }
 
 h1 {
     font-weight: bold;
+    padding-top: .5em;
+}
+
+.header {
+    font-size: 1.25em;
+    color: var(--accentColor);
+    text-align: left;
 }
 
 a {
@@ -36,6 +31,10 @@ a:hover {
     text-decoration: none;
 }
 
+.source-link {
+    color: var(--accentColor)
+}
+
 .bg-light {
     background-color: var(--lightColor) !important;
 }
@@ -44,13 +43,20 @@ a:hover {
     max-width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.navbar {
+    border-bottom: 1px solid var(--darkColor);
+    text-align: right;
 }
 
 
 /*nav bar link*/
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--accentColorOne);
+    color: var(--accentColor);
 }
 
 

@@ -1,0 +1,36 @@
+:root {
+    --lightColor: #fae3d2;
+    --darkColor: #303a75;
+    --accentColor: #888686;
+}
+
+h2 {
+    color: var(--accentColor);
+    font-weight: bold;
+    margin: 0;
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 1em;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.course p,
+.course li {
+    margin: 0;
+}
+
+.p2 {
+    padding: 5px;
+}
+
+.content-wrapper {
+    background-color: #fffaf7;
+    border: 5px solid var(--darkColor);
+}
