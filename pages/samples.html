@@ -63,7 +63,11 @@
 
     <!--START PAGE CONTENT-->
     <div class="content-wrapper flex-wrap">
-        <p id=repos></p>
+        <h2>Public Github Repositories</h2>
+        <hr>
+        <a href="https://github.com/jasminejwebb" class="repo"> Repository: Jasminejwebb</a>
+        <hr>
+        <div id=repos class="p-2"></div>
     </div>
 
     <!--End Page Content-->
@@ -95,19 +99,21 @@
             resultArray.forEach(i => {
                 const anchor = document.createElement("a");
                 anchor.href = i.html_url;
-                anchor.textContent = i.full_name;
-                const frame = document.createElement("iframe")
+                anchor.textContent = i.name;
+                const readmeParagraph = document.createElement("p")
                 let readme = new URL('README.md', i.contents_url);
                 fetch(readme)
                     .then(function(response) {
                         return response.json();
                     }).then(function(data) {
-                        //alert(data.content.toString());
-                        frame.src = 'data:text/md;base64,' + encodeURIComponent(data['content']);
+                        let readableContent = atob(data.content)
+                        let temp = '# ' + i.name
+                        readableContent = readableContent.replace(temp, '    ');
+                        readmeParagraph.innerHTML = readableContent;
                     });
                 repos.appendChild(anchor);
                 repos.appendChild(document.createElement("br"));
-                repos.appendChild(frame);
+                repos.appendChild(readmeParagraph);
                 repos.appendChild(document.createElement("br"));
             })
         }

@@ -12,11 +12,20 @@
     font-size: 3em;
 }
 
+a {
+    color: var(--accentColor);
+    font-weight: bold;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
 h2 {
     color: var(--accentColor);
     font-weight: bold;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -46,5 +55,16 @@ p {
     padding: 5px;
     margin-left: 5%;
     margin-right: 5%;
+    text-align: left;
+}
+
+.repo {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    color: var(--darkColor);
+}
+
+.repo:hover {
+    color: var(--accentColor);
 }
