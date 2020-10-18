@@ -21,13 +21,17 @@ h4 {
     margin-left: 5%;
 }
 
-.course p,
-.course li {
-    margin: 5%;
-}
-
 .p2 {
     padding: 5px;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-right: 5%
+}
+
+.p-2 {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+p {
+    margin: 0;
 }
